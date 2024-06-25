@@ -49,3 +49,6 @@ def agregar_productos():
         return redirect("productos")
 
     return render_template('add_producto.html')
+
+print("hola")
+print("git")

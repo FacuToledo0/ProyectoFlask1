@@ -1,0 +1,25 @@
+{% extends 'template_base.html' %}
+
+{% block title %}
+    PRODUCTOS
+{% endblock %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th><a href="add_producto">Agregar Producto</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for x in lista %}
+        <tr>
+            <td>{{x.product.producto}}</td>
+            <td>{{x.product.categoria}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

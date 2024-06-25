@@ -1,0 +1,20 @@
+{% extends 'template_base.html' %}
+
+{% block title %}
+    AGREGAR PRODUCTOS
+{% endblock %}
+
+
+{% block content %}
+
+<form action="" method="POST">
+    <label for="">Producto</label>
+    <input type="text" id="producto" name="producto">
+
+    <label for="">Categoría</label>
+    <input type="text" id="categoria" name="categoria">
+
+    <button class="form-control btn btn-success" type="submit">Agregar</button>
+</form>
+
+{% endblock %}
